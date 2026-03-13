@@ -41,8 +41,8 @@ root = tree.getroot()
 #	print key
 
 for key in root.iter('{http://s3.amazonaws.com/doc/2006-03-01/}Key'):
-	print key.text
+	print(key.text)
 	url = "http://contagiomobile.deependresearch.org/" + key.text
 	wget.download(url)
-	print "\n"
+	print("\n")
 	

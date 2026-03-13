@@ -8,7 +8,7 @@ This python script helps to download all archived files.
 
 Requirements:
 ```
-Python 2. 7
+Python 3
 approx. 10GB storage space 
 ```
 
@@ -17,7 +17,7 @@ Usage:
 git clone https://github.com/zollak/contagiodump.git
 cd contagiodump/
 wget http://contagiomobile.deependresearch.org
-virtualenv --python=python2.7 .env
+python -m venv .env
 source .env/bin/activate
 pip install -r requirements.txt 
 python get_files.py
