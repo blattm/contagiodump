@@ -25,6 +25,12 @@ deactivate
 ```
 
 
+Use `extract.py` to extract the downloaded zip files:
+```
+python3 extract.py /path/to/downloads
+```
+Each zip is extracted into a folder of the same name. Zip files are kept.
+
 The zip files are password protected.
 
 The password scheme is infected666 followed by the last character before the zip extension. e.g abc.zip will have the password infected666c. See the name of the file you are downloading and the character before the dot. The old files (prior to 2012) may have the pass 'infected'
