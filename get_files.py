@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import wget
+from pathlib import Path
 from xml.etree import ElementTree as et
 
 """
@@ -31,7 +32,7 @@ from xml.etree import ElementTree as et
 </ListBucketResult>
 """
 
-tree = et.parse('index.html')
+tree = et.parse(Path(__file__).parent / 'index.html')
 root = tree.getroot()
 
 #for child in root:
